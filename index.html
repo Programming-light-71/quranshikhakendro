@@ -35,6 +35,7 @@
       text-align: left;
     }
 
+
     header h1 {
       font-size: 3.3rem;
       margin-bottom: 10px;
@@ -44,6 +45,9 @@
       margin-bottom: 10px;
     }
 
+#break{
+display: hidden
+}
     header p {
       font-size: 1.1rem;
       opacity: 0.95;
@@ -175,9 +179,14 @@
       color: #a7f3d0;
     }
 
+#developedBy {
+text-decoration: none;
+color: #a7f3d0;
+}
+
     @media (max-width: 800px) {
       header {
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
       }
 
@@ -189,6 +198,18 @@
       header h1 {
         font-size: 2rem;
       }
+animation{
+height:200px;
+width:200px
+
+}
+
+#break{
+display: block;
+}
+ 
+header h1 > .quran-text{
+font-size:2.4rem
     }
   </style>
 </head>
@@ -198,7 +219,7 @@
   <header>
     <div class="header-text">
       <h1><span class="quran-text">কুরআন ও</span><br/>আরবি শিক্ষা কেন্দ্র</h1>
-      <p>হাফেযা / দাখিল পাস শিক্ষিকার তত্ত্বাবধানে — যত্ন ও আদবের সাথে শিক্ষা</p>
+      <p>হাফেযা ও দাখিল পাস শিক্ষিকার তত্ত্বাবধানে — যত্ন ও আদবের সাথে শিক্ষা</p>
       <br/>
       <a href="tel:+8801627201469" class="call-link">📞 এখনই কল করুন</a>
     </div>
@@ -233,7 +254,7 @@
   <!-- FEES -->
   <section>
     <h2>সময় ও হাদিয়া</h2>
-    <p>📅 সময় ও দিন নির্ধারিত হয় শিক্ষার্থী ও অভিভাবকের সুবিধা অনুযায়ী।  
+    <p>📅 সময় ও দিন নির্ধারিত হয় শিক্ষার্থী ও অভিভাবকের সুবিধা অনুযায়ী।    <br/><br/>
       💬 হাদিয়া নির্ধারণ করা হয় <span class="highlight">আলোচনার ভিত্তিতে</span>।  
       শিক্ষা সরাসরি উপস্থিত থেকে অথবা অনলাইন (WhatsApp)-এর মাধ্যমে প্রদান করা হয়।</p>
   </section>
@@ -254,8 +275,19 @@
   </section>
 
   <footer>
-    © 2025 কুরআন ও আরবি শিক্ষা কেন্দ্র | <span>Designed by Programming Light</span>
+    © <span id="copy-date"></span> কুরআন ও আরবি শিক্ষা কেন্দ্র | 
+
+<br id="break"/>
+ <span>Developed by <a href="https://github.com/Programming-light-71" target="_blank" id="developedBy">Programming Light</a></span>
   </footer>
+
+<script>
+ 
+  const year = new Date().getFullYear() || 2025
+  document.getElementById('copy-date').innerHTML = year
+  
+</script>
 
 </body>
 </html>
+
