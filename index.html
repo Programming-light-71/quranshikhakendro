@@ -17,8 +17,7 @@
     }
 
     header {
-     // background: linear-gradient(135deg, #10b981, #059669);
-      color:  #059669;
+      color: #059669;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -27,8 +26,7 @@
       border-bottom-left-radius: 40px;
       border-bottom-right-radius: 40px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-bottom: 2px solid  #059669;
-
+      border-bottom: 2px solid #059669;
     }
 
     .header-text {
@@ -41,11 +39,10 @@
       font-size: 3.3rem;
       margin-bottom: 10px;
     }
-    header h1> .quran-text{
+    header h1 > .quran-text {
       font-size: 4.6rem;
       margin-bottom: 10px;
     }
-
 
     header p {
       font-size: 1.1rem;
@@ -101,22 +98,64 @@
       border-radius: 10px;
     }
 
-    .contact {
+    /* CONTACT SECTION STYLING */
+    .contact-section {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 50px;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #ecfdf5, #f0fdfa);
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    .call-button {
-      background: #10b981;
+    .contact-section h2 {
+      color: #065f46;
+      margin-bottom: 25px;
+    }
+
+    .contact-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .contact-card {
+      background: white;
+      border: 1px solid #d1fae5;
+      border-radius: 15px;
+      padding: 20px 25px;
+      width: 250px;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      border-color: #10b981;
+    }
+
+    .contact-card h3 {
+      color: #047857;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .call-link {
+      display: inline-block;
       color: white;
-      padding: 10px 30px;
-      border-radius: 30px;
-      font-size: 1.1rem;
+      background: #10b981;
       text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 25px;
       transition: 0.3s;
     }
 
-    .call-button:hover {
+    .call-link:hover {
       background: #059669;
       transform: scale(1.05);
     }
@@ -129,6 +168,7 @@
       border-top-left-radius: 30px;
       border-top-right-radius: 30px;
       font-size: 0.95rem;
+      margin-top: 50px;
     }
 
     footer span {
@@ -157,39 +197,26 @@
   <!-- HEADER -->
   <header>
     <div class="header-text">
-      <h1>
-<span
-class="quran-text"
->কুরআন ও</span>
-<br/>আরবি শিক্ষা কেন্দ্র</h1>
+      <h1><span class="quran-text">কুরআন ও</span><br/>আরবি শিক্ষা কেন্দ্র</h1>
       <p>হাফেযা / দাখিল পাস শিক্ষিকার তত্ত্বাবধানে — যত্ন ও আদবের সাথে শিক্ষা</p>
-
-<br/>
-
-    <a href="tel:+8801627201469" class="call-button">যোগাযোগ করুন</a>
-
-
+      <br/>
+      <a href="tel:+8801627201469" class="call-link">📞 এখনই কল করুন</a>
     </div>
 
-
     <div class="animation">
-     <dotlottie-wc
-  src="https://lottie.host/c595c7d0-c4e2-402b-8838-d440d0d16641/RAETwZVEls.lottie"
-  style="width: 300px;height: 300px"
-  autoplay
-  loop
-></dotlottie-wc>
+      <dotlottie-wc
+        src="https://lottie.host/c595c7d0-c4e2-402b-8838-d440d0d16641/RAETwZVEls.lottie"
+        style="width: 300px;height: 300px"
+        autoplay
+        loop>
+      </dotlottie-wc>
     </div>
   </header>
 
-  <!-- ABOUT SECTION -->
+  <!-- ABOUT -->
   <section>
     <h2>আমাদের লক্ষ্য</h2>
-    <p>
-      ইসলামি শিক্ষার প্রথম ধাপ শুরু হয় সঠিকভাবে <span class="highlight">কুরআন তিলাওয়াত</span> শেখার মাধ্যমে।
-      আমরা শিশু ও মহিলাদের জন্য একটি আরামদায়ক ও প্রশান্তিময় পরিবেশে কুরআন শরীফ শেখাই।
-      প্রতিটি শিক্ষার্থীকে তাজবিদ, উচ্চারণ ও অর্থ বোঝার দিকে বিশেষ মনোযোগ দেওয়া হয়।
-    </p>
+    <p>ইসলামি শিক্ষার প্রথম ধাপ শুরু হয় সঠিকভাবে <span class="highlight">কুরআন তিলাওয়াত</span> শেখার মাধ্যমে। আমরা শিশু ও মহিলাদের জন্য একটি আরামদায়ক ও প্রশান্তিময় পরিবেশে কুরআন শরীফ শেখাই। প্রতিটি শিক্ষার্থীকে তাজবিদ, উচ্চারণ ও অর্থ বোঝার দিকে বিশেষ মনোযোগ দেওয়া হয়।</p>
   </section>
 
   <!-- SUBJECTS -->
@@ -197,28 +224,34 @@ class="quran-text"
     <h2>শিক্ষার বিষয়সমূহ</h2>
     <ul>
       <li>🕋 কুরআন শরীফ তাজবিদসহ পড়ানো ও মুখস্থ করানো</li>
-      <li>✍️ আরবি হরফ চেনা, লেখা ও উচ্চারণ শিক্ষা</li>
+      <li✍️ আরবি হরফ চেনা, লেখা ও উচ্চারণ শিক্ষা</li>
       <li>📚 ইবতেদায়ী পর্যায়ের আরবি পাঠ্য শিক্ষা</li>
       <li>📖 ইসলামি আদব, দোআ ও আকিদাহর মৌলিক জ্ঞান</li>
     </ul>
   </section>
 
-  <!-- FEES & TIMING -->
+  <!-- FEES -->
   <section>
     <h2>সময় ও হাদিয়া</h2>
-    <p>
-      📅 সময় ও দিন নির্ধারিত হয় শিক্ষার্থী ও অভিভাবকের সুবিধা অনুযায়ী।  
+    <p>📅 সময় ও দিন নির্ধারিত হয় শিক্ষার্থী ও অভিভাবকের সুবিধা অনুযায়ী।  
       💬 হাদিয়া নির্ধারণ করা হয় <span class="highlight">আলোচনার ভিত্তিতে</span>।  
-      শিক্ষা সরাসরি উপস্থিত থেকে অথবা অনলাইন (WhatsApp)-এর মাধ্যমে প্রদান করা হয়।
-    </p>
+      শিক্ষা সরাসরি উপস্থিত থেকে অথবা অনলাইন (WhatsApp)-এর মাধ্যমে প্রদান করা হয়।</p>
   </section>
 
-  <!-- CONTACT -->
-  <div class="contact">
-    <a href="tel:+8801627201469" class="call-button">📱 যোগাযোগ করুন: 01627201469</a>
-  </div>
-
-<br/><br/><br/><br/>
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <h2>📱 যোগাযোগ করুন</h2>
+    <div class="contact-cards">
+      <div class="contact-card">
+        <h3>প্রধান নম্বর</h3>
+        <a href="tel:+8801627201469" class="call-link">📞 01627-201469</a>
+      </div>
+      <div class="contact-card">
+        <h3>বিকল্প নম্বর</h3>
+        <a href="tel:+8801731820744" class="call-link">📞 01731-820744</a>
+      </div>
+    </div>
+  </section>
 
   <footer>
     © 2025 কুরআন ও আরবি শিক্ষা কেন্দ্র | <span>Designed by Programming Light</span>
